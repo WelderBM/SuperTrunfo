@@ -95,5 +95,103 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
     printf("Densidade Populacional - Carta 2: %.2f hab/km²\n", populationDensity2);
     printf("PIB per Capita - Carta 2: %.2f reais\n", pibPerCapita2);
 
+    float superPower1 = (float)population1 + area1 + pib1 + (float)touristPoints1 + pibPerCapita1 + (1.0f / populationDensity1);
+    float superPower2 = (float)population2 + area2 + pib2 + (float)touristPoints2 + pibPerCapita2 + (1.0f / populationDensity2);
+
+    printf("\nComparação dos Atributos:\n");
+    printf("População: ");
+    if (population1 > population2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (population1 < population2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+
+    printf("Área: ");
+    if (area1 > area2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (area1 < area2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+    printf("PIB: ");
+    if (pib1 > pib2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (pib1 < pib2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+
+    printf("Número de Pontos Turísticos: ");
+    if (touristPoints1 > touristPoints2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (touristPoints1 < touristPoints2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+    printf("Densidade Populacional: ");
+    if (populationDensity1 < populationDensity2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (populationDensity1 > populationDensity2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+    printf("PIB per Capita: ");
+    if (pibPerCapita1 > pibPerCapita2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (pibPerCapita1 < pibPerCapita2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+    printf("Super Poder: ");
+    if (superPower1 > superPower2)
+    {
+        printf("Carta 1 vence\n");
+    }
+    else if (superPower1 < superPower2)
+    {
+        printf("Carta 2 vence\n");
+    }
+    else
+    {
+        printf("Empate\n");
+    }
+
     return 0;
 }
