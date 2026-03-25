@@ -24,6 +24,8 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
     float area1;
     float pib1;
     int touristPoints1;
+    float populationDensity1;
+    float pibPerCapita1;
 
     char state2;
     char cardCode2[4];
@@ -32,6 +34,8 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
     float area2;
     float pib2;
     int touristPoints2;
+    float populationDensity2;
+    float pibPerCapita2;
 
     printf("Super Trunfo\n");
     printf("Digite os dados da primeira carta:\n");
@@ -79,6 +83,17 @@ Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tip
     printf("Área (km²): %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", touristPoints2);
+
+    // Cálculo da densidade populacional e PIB per capita para as cartas
+    populationDensity1 = population1 / area1;
+    pibPerCapita1 = pib1 / population1;
+    populationDensity2 = population2 / area2;
+    pibPerCapita2 = pib2 / population2;
+
+    printf("\nDensidade Populacional - Carta 1: %.2f hab/km²\n", populationDensity1);
+    printf("PIB per Capita - Carta 1: %.2f reais\n", pibPerCapita1);
+    printf("Densidade Populacional - Carta 2: %.2f hab/km²\n", populationDensity2);
+    printf("PIB per Capita - Carta 2: %.2f reais\n", pibPerCapita2);
 
     return 0;
 }
